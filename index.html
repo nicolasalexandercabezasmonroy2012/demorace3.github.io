@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("images/background.png");
+        background-repeat: no-repeat;
+        background-size: 100% 1000px;
+      }
+      .css0 {
+        top: 0px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css1 {
+        top: 93px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css2 {
+        top: 190px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css3 {
+        top: 290px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css4 {
+        top: 390px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css5 {
+        top: 490px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css6 {
+        top: 590px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css7 {
+        top: 690px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+      .css8 {
+        top: 790px;
+        width: 90px;
+        position: absolute;
+        margin-left: 90px;
+      }
+    </style>
+    <script>
+      var bengingmove;
+      posX1 = 0;
+      posX2 = 0;
+      posX3 = 0;
+      posX4 = 0;
+      posX5 = 0;
+      posX6 = 0;
+      posX7 = 0;
+      posX8 = 0;
+      var widthScreen = (screen.width * 91) / 100;
+
+      function startmove() {
+        bengingmove = setInterval(move, 100);
+      }
+      function move() {
+        if (posX1 <= widthScreen) {
+          var c1 = document.getElementById("c1");
+          var number = Math.round(Math.random() * 100);
+          c1.style.left = posX1 + "px";
+          posX1 += number;
+        }
+        if (posX2 <= widthScreen) {
+          var c2 = document.getElementById("c2");
+          var number = Math.round(Math.random() * 100);
+          c2.style.left = posX2 + "px";
+          posX2 += number;
+        }
+        if (posX3 <= widthScreen) {
+          var c3 = document.getElementById("c3");
+          var number = Math.round(Math.random() * 100);
+          c3.style.left = posX3 + "px";
+          posX3 += number;
+        }
+        if (posX4 <= widthScreen) {
+          var c4 = document.getElementById("c4");
+          var number = Math.round(Math.random() * 100);
+          c4.style.left = posX4 + "px";
+          posX4 += number;
+        }
+        if (posX5 <= widthScreen) {
+          var c5 = document.getElementById("c5");
+          var number = Math.round(Math.random() * 100);
+          c5.style.left = posX5 + "px";
+          posX5 += number;
+        }
+        if (posX6 <= widthScreen) {
+          var c6 = document.getElementById("c6");
+          var number = Math.round(Math.random() * 100);
+          c6.style.left = posX6 + "px";
+          posX6 += number;
+        }
+        if (posX7 <= widthScreen) {
+          var c7 = document.getElementById("c7");
+          var number = Math.round(Math.random() * 100);
+          c7.style.left = posX7 + "px";
+          posX7 += number;
+        }
+        if (posX8 <= widthScreen) {
+          var c8 = document.getElementById("c8");
+          var number = Math.round(Math.random() * 100);
+          c8.style.left = posX8 + "px";
+          posX8 += number;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img onclick="startmove()" class="css0" src="images/9.png" alt="" />
+      <img id="c1" class="css1" src="images/1.png" alt="" />
+      <img id="c2" class="css2" src="images/2.png" alt="" />
+      <img id="c3" class="css3" src="images/3.png" alt="" />
+      <img id="c4" class="css4" src="images/4.png" alt="" />
+      <img id="c5" class="css5" src="images/5.png" alt="" />
+      <img id="c6" class="css6" src="images/6.png" alt="" />
+      <img id="c7" class="css7" src="images/7.png" alt="" />
+      <img id="c8" class="css8" src="images/8.png" alt="" />
+    </div>
+  </body>
+</html>
